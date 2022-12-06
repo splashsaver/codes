@@ -6,7 +6,13 @@
     "dev": "next dev --port 3003",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:push": "prisma db push",
+    "prisma:generate": "prisma generate",
+    "prisma:format": "prisma format",
+    "prisma:mix": "prismix && prisma format",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:studio": "prisma studio"
   },
   "dependencies": {
     "@prisma/client": "^4.7.1",
